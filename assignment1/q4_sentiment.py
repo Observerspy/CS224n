@@ -138,10 +138,10 @@ def outputPredictions(dataset, features, labels, clf, filename):
     """ Write the predictions to file """
     pred = clf.predict(features)
     with open(filename, "w") as f:
-        print >> f, "True\tPredicted\tText"
+        f.write("True\tPredicted\tText\n")
         for i in range(len(dataset)):
-            print >> f, "%d\t%d\t%s" % (
-                labels[i], pred[i], " ".join(dataset[i][0]))
+            f.write("%d\t%d\t%s" % (
+                labels[i], pred[i], " ".join(dataset[i][0])) + '\n')
 
 
 def main(args):

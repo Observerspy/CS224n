@@ -23,6 +23,7 @@ def load_saved_params():
 
     if st > 0:
         with open("saved_params_%d.npy" % st, "rb") as f:
+            print(f)
             params = pickle.load(f)
             state = pickle.load(f)
         return st, params, state
