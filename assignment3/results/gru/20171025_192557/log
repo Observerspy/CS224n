@@ -1,0 +1,230 @@
+2017-10-25 19:26:02,056:INFO: Building model...
+2017-10-25 19:26:45,253:INFO: took 43.20 seconds
+2017-10-25 19:26:57,148:INFO: Epoch 1 out of 10
+2017-10-25 19:31:12,305:INFO: Evaluating on development data
+2017-10-25 19:32:56,794:DEBUG: Token-level confusion matrix:
+go\gu   	PER     	ORG     	LOC     	MISC    	O       
+PER     	2933.00 	97.00   	35.00   	6.00    	78.00   
+ORG     	283.00  	1489.00 	125.00  	27.00   	168.00  
+LOC     	118.00  	248.00  	1629.00 	26.00   	73.00   
+MISC    	90.00   	237.00  	87.00   	721.00  	133.00  
+O       	92.00   	94.00   	19.00   	21.00   	42533.00
+
+2017-10-25 19:32:56,795:DEBUG: Token-level scores:
+label	acc  	prec 	rec  	f1   
+PER  	0.98 	0.83 	0.93 	0.88 
+ORG  	0.98 	0.69 	0.71 	0.70 
+LOC  	0.99 	0.86 	0.78 	0.82 
+MISC 	0.99 	0.90 	0.57 	0.70 
+O    	0.99 	0.99 	0.99 	0.99 
+micro	0.98 	0.96 	0.96 	0.96 
+macro	0.98 	0.85 	0.80 	0.82 
+not-O	0.98 	0.81 	0.79 	0.80 
+
+2017-10-25 19:32:56,795:INFO: Entity level P/R/F1: 0.72/0.75/0.74
+2017-10-25 19:32:56,795:INFO: New best score! Saving model in results/gru/20171025_192557/model.weights
+2017-10-25 19:33:18,062:INFO: Epoch 2 out of 10
+2017-10-25 19:40:25,111:INFO: Evaluating on development data
+2017-10-25 19:42:29,193:DEBUG: Token-level confusion matrix:
+go\gu   	PER     	ORG     	LOC     	MISC    	O       
+PER     	2964.00 	23.00   	27.00   	14.00   	121.00  
+ORG     	295.00  	1342.00 	95.00   	132.00  	228.00  
+LOC     	118.00  	144.00  	1672.00 	58.00   	102.00  
+MISC    	91.00   	38.00   	39.00   	959.00  	141.00  
+O       	60.00   	29.00   	11.00   	31.00   	42628.00
+
+2017-10-25 19:42:29,194:DEBUG: Token-level scores:
+label	acc  	prec 	rec  	f1   
+PER  	0.99 	0.84 	0.94 	0.89 
+ORG  	0.98 	0.85 	0.64 	0.73 
+LOC  	0.99 	0.91 	0.80 	0.85 
+MISC 	0.99 	0.80 	0.76 	0.78 
+O    	0.99 	0.99 	1.00 	0.99 
+micro	0.99 	0.97 	0.97 	0.97 
+macro	0.99 	0.88 	0.83 	0.85 
+not-O	0.99 	0.85 	0.81 	0.83 
+
+2017-10-25 19:42:29,194:INFO: Entity level P/R/F1: 0.77/0.77/0.77
+2017-10-25 19:42:29,194:INFO: New best score! Saving model in results/gru/20171025_192557/model.weights
+2017-10-25 19:42:50,283:INFO: Epoch 3 out of 10
+2017-10-25 19:53:16,883:INFO: Evaluating on development data
+2017-10-25 19:55:49,217:DEBUG: Token-level confusion matrix:
+go\gu   	PER     	ORG     	LOC     	MISC    	O       
+PER     	2903.00 	40.00   	100.00  	9.00    	97.00   
+ORG     	149.00  	1583.00 	116.00  	94.00   	150.00  
+LOC     	32.00   	157.00  	1831.00 	22.00   	52.00   
+MISC    	50.00   	56.00   	75.00   	959.00  	128.00  
+O       	37.00   	41.00   	24.00   	33.00   	42624.00
+
+2017-10-25 19:55:49,218:DEBUG: Token-level scores:
+label	acc  	prec 	rec  	f1   
+PER  	0.99 	0.92 	0.92 	0.92 
+ORG  	0.98 	0.84 	0.76 	0.80 
+LOC  	0.99 	0.85 	0.87 	0.86 
+MISC 	0.99 	0.86 	0.76 	0.80 
+O    	0.99 	0.99 	1.00 	0.99 
+micro	0.99 	0.97 	0.97 	0.97 
+macro	0.99 	0.89 	0.86 	0.88 
+not-O	0.99 	0.88 	0.85 	0.86 
+
+2017-10-25 19:55:49,218:INFO: Entity level P/R/F1: 0.81/0.82/0.81
+2017-10-25 19:55:49,219:INFO: New best score! Saving model in results/gru/20171025_192557/model.weights
+2017-10-25 19:56:10,189:INFO: Epoch 4 out of 10
+2017-10-25 20:12:55,151:INFO: Evaluating on development data
+2017-10-25 20:16:04,072:DEBUG: Token-level confusion matrix:
+go\gu   	PER     	ORG     	LOC     	MISC    	O       
+PER     	2964.00 	60.00   	28.00   	25.00   	72.00   
+ORG     	152.00  	1657.00 	68.00   	121.00  	94.00   
+LOC     	56.00   	186.00  	1724.00 	84.00   	44.00   
+MISC    	41.00   	56.00   	25.00   	1047.00 	99.00   
+O       	46.00   	55.00   	13.00   	56.00   	42589.00
+
+2017-10-25 20:16:04,072:DEBUG: Token-level scores:
+label	acc  	prec 	rec  	f1   
+PER  	0.99 	0.91 	0.94 	0.93 
+ORG  	0.98 	0.82 	0.79 	0.81 
+LOC  	0.99 	0.93 	0.82 	0.87 
+MISC 	0.99 	0.79 	0.83 	0.81 
+O    	0.99 	0.99 	1.00 	0.99 
+micro	0.99 	0.97 	0.97 	0.97 
+macro	0.99 	0.89 	0.88 	0.88 
+not-O	0.99 	0.87 	0.86 	0.87 
+
+2017-10-25 20:16:04,072:INFO: Entity level P/R/F1: 0.81/0.83/0.82
+2017-10-25 20:16:04,073:INFO: New best score! Saving model in results/gru/20171025_192557/model.weights
+2017-10-25 20:16:26,370:INFO: Epoch 5 out of 10
+2017-10-25 20:42:48,988:INFO: Evaluating on development data
+2017-10-25 20:46:41,895:DEBUG: Token-level confusion matrix:
+go\gu   	PER     	ORG     	LOC     	MISC    	O       
+PER     	2879.00 	22.00   	128.00  	24.00   	96.00   
+ORG     	144.00  	1497.00 	164.00  	146.00  	141.00  
+LOC     	24.00   	51.00   	1939.00 	36.00   	44.00   
+MISC    	26.00   	15.00   	56.00   	1061.00 	110.00  
+O       	40.00   	35.00   	24.00   	49.00   	42611.00
+
+2017-10-25 20:46:41,895:DEBUG: Token-level scores:
+label	acc  	prec 	rec  	f1   
+PER  	0.99 	0.92 	0.91 	0.92 
+ORG  	0.99 	0.92 	0.72 	0.81 
+LOC  	0.99 	0.84 	0.93 	0.88 
+MISC 	0.99 	0.81 	0.84 	0.82 
+O    	0.99 	0.99 	1.00 	0.99 
+micro	0.99 	0.97 	0.97 	0.97 
+macro	0.99 	0.90 	0.88 	0.88 
+not-O	0.99 	0.88 	0.86 	0.87 
+
+2017-10-25 20:46:41,896:INFO: Entity level P/R/F1: 0.82/0.83/0.83
+2017-10-25 20:46:41,896:INFO: New best score! Saving model in results/gru/20171025_192557/model.weights
+2017-10-25 20:47:02,998:INFO: Epoch 6 out of 10
+2017-10-25 21:22:35,951:INFO: Evaluating on development data
+2017-10-25 21:26:57,464:DEBUG: Token-level confusion matrix:
+go\gu   	PER     	ORG     	LOC     	MISC    	O       
+PER     	2837.00 	70.00   	89.00   	82.00   	71.00   
+ORG     	99.00   	1623.00 	107.00  	175.00  	88.00   
+LOC     	16.00   	96.00   	1903.00 	49.00   	30.00   
+MISC    	16.00   	26.00   	44.00   	1097.00 	85.00   
+O       	33.00   	42.00   	35.00   	63.00   	42586.00
+
+2017-10-25 21:26:57,465:DEBUG: Token-level scores:
+label	acc  	prec 	rec  	f1   
+PER  	0.99 	0.95 	0.90 	0.92 
+ORG  	0.99 	0.87 	0.78 	0.82 
+LOC  	0.99 	0.87 	0.91 	0.89 
+MISC 	0.99 	0.75 	0.87 	0.80 
+O    	0.99 	0.99 	1.00 	0.99 
+micro	0.99 	0.97 	0.97 	0.97 
+macro	0.99 	0.89 	0.89 	0.89 
+not-O	0.99 	0.88 	0.87 	0.87 
+
+2017-10-25 21:26:57,465:INFO: Entity level P/R/F1: 0.81/0.84/0.83
+2017-10-25 21:26:57,466:INFO: New best score! Saving model in results/gru/20171025_192557/model.weights
+2017-10-25 21:27:20,388:INFO: Epoch 7 out of 10
+2017-10-25 22:08:29,095:INFO: Evaluating on development data
+2017-10-25 22:13:16,490:DEBUG: Token-level confusion matrix:
+go\gu   	PER     	ORG     	LOC     	MISC    	O       
+PER     	2962.00 	32.00   	16.00   	11.00   	128.00  
+ORG     	150.00  	1671.00 	59.00   	57.00   	155.00  
+LOC     	58.00   	95.00   	1843.00 	21.00   	77.00   
+MISC    	49.00   	49.00   	26.00   	1017.00 	127.00  
+O       	43.00   	40.00   	9.00    	24.00   	42643.00
+
+2017-10-25 22:13:16,491:DEBUG: Token-level scores:
+label	acc  	prec 	rec  	f1   
+PER  	0.99 	0.91 	0.94 	0.92 
+ORG  	0.99 	0.89 	0.80 	0.84 
+LOC  	0.99 	0.94 	0.88 	0.91 
+MISC 	0.99 	0.90 	0.80 	0.85 
+O    	0.99 	0.99 	1.00 	0.99 
+micro	0.99 	0.98 	0.98 	0.98 
+macro	0.99 	0.93 	0.88 	0.90 
+not-O	0.99 	0.91 	0.87 	0.89 
+
+2017-10-25 22:13:16,491:INFO: Entity level P/R/F1: 0.86/0.85/0.85
+2017-10-25 22:13:16,492:INFO: New best score! Saving model in results/gru/20171025_192557/model.weights
+2017-10-25 22:13:38,210:INFO: Epoch 8 out of 10
+2017-10-25 23:02:10,455:INFO: Evaluating on development data
+2017-10-25 23:07:47,866:DEBUG: Token-level confusion matrix:
+go\gu   	PER     	ORG     	LOC     	MISC    	O       
+PER     	2715.00 	223.00  	51.00   	33.00   	127.00  
+ORG     	57.00   	1783.00 	59.00   	67.00   	126.00  
+LOC     	16.00   	146.00  	1862.00 	20.00   	50.00   
+MISC    	14.00   	70.00   	44.00   	1027.00 	113.00  
+O       	13.00   	57.00   	12.00   	31.00   	42646.00
+
+2017-10-25 23:07:47,866:DEBUG: Token-level scores:
+label	acc  	prec 	rec  	f1   
+PER  	0.99 	0.96 	0.86 	0.91 
+ORG  	0.98 	0.78 	0.85 	0.82 
+LOC  	0.99 	0.92 	0.89 	0.90 
+MISC 	0.99 	0.87 	0.81 	0.84 
+O    	0.99 	0.99 	1.00 	0.99 
+micro	0.99 	0.97 	0.97 	0.97 
+macro	0.99 	0.91 	0.88 	0.89 
+not-O	0.99 	0.89 	0.86 	0.87 
+
+2017-10-25 23:07:47,866:INFO: Entity level P/R/F1: 0.83/0.84/0.83
+2017-10-25 23:07:47,868:INFO: Epoch 9 out of 10
+2017-10-26 00:01:31,537:INFO: Evaluating on development data
+2017-10-26 00:07:38,373:DEBUG: Token-level confusion matrix:
+go\gu   	PER     	ORG     	LOC     	MISC    	O       
+PER     	2876.00 	115.00  	72.00   	21.00   	65.00   
+ORG     	101.00  	1782.00 	70.00   	63.00   	76.00   
+LOC     	25.00   	106.00  	1918.00 	19.00   	26.00   
+MISC    	21.00   	88.00   	59.00   	1016.00 	84.00   
+O       	29.00   	98.00   	25.00   	42.00   	42565.00
+
+2017-10-26 00:07:38,374:DEBUG: Token-level scores:
+label	acc  	prec 	rec  	f1   
+PER  	0.99 	0.94 	0.91 	0.93 
+ORG  	0.99 	0.81 	0.85 	0.83 
+LOC  	0.99 	0.89 	0.92 	0.91 
+MISC 	0.99 	0.88 	0.80 	0.84 
+O    	0.99 	0.99 	1.00 	0.99 
+micro	0.99 	0.98 	0.98 	0.98 
+macro	0.99 	0.90 	0.90 	0.90 
+not-O	0.99 	0.89 	0.88 	0.89 
+
+2017-10-26 00:07:38,374:INFO: Entity level P/R/F1: 0.84/0.86/0.85
+2017-10-26 00:07:38,375:INFO: Epoch 10 out of 10
+2017-10-26 01:07:52,967:INFO: Evaluating on development data
+2017-10-26 01:14:16,144:DEBUG: Token-level confusion matrix:
+go\gu   	PER     	ORG     	LOC     	MISC    	O       
+PER     	2991.00 	46.00   	47.00   	8.00    	57.00   
+ORG     	124.00  	1713.00 	92.00   	74.00   	89.00   
+LOC     	38.00   	85.00   	1932.00 	8.00    	31.00   
+MISC    	41.00   	50.00   	59.00   	1027.00 	91.00   
+O       	47.00   	47.00   	26.00   	38.00   	42601.00
+
+2017-10-26 01:14:16,164:DEBUG: Token-level scores:
+label	acc  	prec 	rec  	f1   
+PER  	0.99 	0.92 	0.95 	0.94 
+ORG  	0.99 	0.88 	0.82 	0.85 
+LOC  	0.99 	0.90 	0.92 	0.91 
+MISC 	0.99 	0.89 	0.81 	0.85 
+O    	0.99 	0.99 	1.00 	1.00 
+micro	0.99 	0.98 	0.98 	0.98 
+macro	0.99 	0.92 	0.90 	0.91 
+not-O	0.99 	0.90 	0.89 	0.90 
+
+2017-10-26 01:14:16,164:INFO: Entity level P/R/F1: 0.85/0.87/0.86
+2017-10-26 01:14:16,166:INFO: New best score! Saving model in results/gru/20171025_192557/model.weights
