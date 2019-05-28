@@ -1,1 +1,3 @@
-*.js linguist-language=Python
+*.en linguist-language=Python
+*.es linguist-language=Python
+
